@@ -20,6 +20,7 @@ export const Wrapper = styled.div`
         border-radius: 170px;
         position: absolute;
         right: 5%;
+        color: black;
     }
     button:hover{
        
