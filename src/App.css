@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  min-height: 100vh;
+  
+  overflow-y: hidden;
   background: rgba(255, 222, 89, 1);
 
 }

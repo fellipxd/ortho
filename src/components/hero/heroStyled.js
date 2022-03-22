@@ -7,50 +7,39 @@ export const Wrapper = styled.div`
     height: calc(100vh - 80px);
     position: relative;
 
+
+
     @media screen and (max-width:290px){
         margin-top: 20px;
     }  
 `
+
+
+
+
+
 export const ImgWrapper = styled.div`
-    height:33vh;
+    height:30vh;
     width: 100%;
     margin:0 auto;
     position: absolute; 
-    bottom: 0;
+    bottom: -8%;
 
     .big_img{
         height: 100%;
-        width: 90%;
+        width: 55%;
+        z-index: 1;
        
     }
+
     .small_img{
         display: none;
-       
     }
+
     @media screen and (height:600px){
         height:30vh;
     }
-   
-    @media screen and (max-width:760px){
-        position: absolute;
-        bottom: 0;
-        img{
-        height: 100%;
-        width: 100%;  
-    }
-    .big_img{
-        display: none;
-       
-    }
-    .small_img{
-        position: absolute;
-        bottom: -10%;
-        height: 100%;
-        width: 100%;
-        display: flex;
-       
-    }
-    } 
+    
     @media screen and (max-width:920px){
         height: 40vh;
         .big_img{
@@ -60,35 +49,50 @@ export const ImgWrapper = styled.div`
     }
     } 
 
-    @media screen and (max-width:290px){
-        height:30vh;
+    @media screen and (max-width:950px){
+        .big_img{
+        height: 100%;
+        width: 115vw;
+        position: absolute;
+        left:-10% ;   
+    }}
+       
+    @media screen and (max-width:400px){
+        height:30vh; 
     }
 `
 
+
+
+
+
+
 export const Desc = styled.div`
     font-family: 'gilroy', sans-serif;
-    height: 55vh;
+    height: 60vh;
     display:flex;
     flex-direction: column;
     align-items:center;
     justify-content:center;
-   
-  
+    z-index: 2; 
     
     .clear{
         font-weight: 700;
-        font-size: 6.2rem;
-        max-width: 1135px;
+        font-size: 6em;
+        max-width: 80%;
+        margin: 0 auto;  
         transition: all 0.3s ease-in-out; 
-        
     }
+
     .fade{
         font-weight: 700;
-        font-size: 6.2rem;
-        max-width: 1135px;
+        font-size: 6em;
+        max-width: 80%;
+        margin: 0 auto;
         color:  rgba(0, 0, 0, 0.5) !important;
         transition: all 0.3s ease-in-out; 
     }
+
     .line{
         margin-left: 20px;
         color:  rgba(255, 222, 89, 1) !important;
@@ -96,23 +100,20 @@ export const Desc = styled.div`
         -webkit-text-stroke-color: black;
         font-weight: 700;
         height: 100px;
-        transition: all 0.3s ease-in-out; 
-        
-        
+        transition: all 0.3s ease-in-out;    
     }
+
     .block{
         height: 100px;
         margin-left: 20px;
         color:  black !important;
         opacity: 1;
         font-weight: 700;
-        transition: all 0.3s ease-in-out; 
-       
-        
+        transition: all 0.3s ease-in-out;     
     }
 
     .goodby{
-        margin-top: 40px;
+        margin: 30px 0;
         font-family: "inter", sans-serif;
         max-width: 660px;
         font-size: 20px;
@@ -120,78 +121,101 @@ export const Desc = styled.div`
     }
 
     button{
-        
-font-size: 20px;
-font-style: normal;
-font-weight: bold;
-line-height: 26px;
-letter-spacing: 0.07em;
-
-
+        font-size: 20px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 26px;
+        letter-spacing: 0.07em;
         cursor: pointer;
         border: none;
         background: black;
         border-radius: 110px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
         padding: 10px;
-        width: 410px;
+        width: 459px;
+        height: 72.52px;
         font-size: 15px;
-        height: 56.52px;
-        margin-top: 20px;
         color:rgba(255, 222, 89, 1);
     }
+
     @media screen and (height:600px){
         .clear{
-        font-size: 5rem;
+        font-size: 3rem;
+        
+        max-width: 80%;
         
     }
     .fade{
         font-size: 5rem;
     }
     }
-    @media screen and (max-width:768px){
-        padding: 10px ;
+
+    @media screen and (max-width:415px){
+        padding: 5px ;
+        .clear{
+        font-size: 2.6rem;
+        
+        max-width: 80%;
+        
+    
+    .fade{
+        
+        font-size: 2.6rem;
+        
+        max-width: 80%;
+    }
+    .goodby{
+        margin-top: 10px;
+        font-family: "inter", sans-serif;
+        max-width: 385px;
+        font-size: 15px;
+        text-align: center;
+    }
     }
 
     @media screen and (max-width:760px){
+        padding: 5px ;
         .clear{
-        font-size: 3.2rem;
+        font-size: 3.6rem;
+        
+        max-width: 80%;
         
     }
     .fade{
-        font-size: 3.2rem;
+        
+        font-size: 3.6rem;
+        
+        max-width: 80%;
     }
-
     .line{
         -webkit-text-stroke-width: 1.3px;      
     }
 
     .goodby{
-        margin-top: 40px;
+        margin-top: 10px;
         font-family: "inter", sans-serif;
         max-width: 385px;
-        font-size: 20px;
+        font-size: 15px;
         text-align: center;
     }
     button{
+        height: 63px;
+        font-size: 13px;
         max-width: 300px;
     }
     }
 
-
     @media screen and (max-width:290px){
         button{
-            height: 40px;
+            height: 35px;
             width: 200px;
             font-size: 11px;
+            padding: 0;
         };
         .goodby{
         font-size: 16px;
 
     }
+    
     .clear{
         font-size: 2.5rem;
         
@@ -200,6 +224,4 @@ letter-spacing: 0.07em;
         font-size: 2.5rem;
     }
     }
-
-   
 `

@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 
 export const Wrapper = styled.div`
-    width: 100vw;
+    width: 100%;
     display: flex;
     height: 80px;
-    padding: 10px 60px; 
+    position:  relative;
     align-items: center;
     justify-content: space-between;
 
@@ -18,6 +18,8 @@ export const Wrapper = styled.div`
         padding: 20px;
         box-sizing: border-box;
         border-radius: 170px;
+        position: absolute;
+        right: 5%;
     }
     button:hover{
        
@@ -28,10 +30,17 @@ export const Wrapper = styled.div`
     }
     img{
             height: 45%;
+            position: absolute;
+        left: 5%;
         }
 
+
+
+
+
+
     @media screen and (max-width: 768px) {
-        padding: 40px 30px 0 30px;
+        
         img{
             height: 50%;
         }
@@ -42,10 +51,25 @@ export const Wrapper = styled.div`
     }
 
 
-    @media screen and (max-width:290px){
+    @media screen and (max-width:600px){
+        img{
+            height: 30%;
+        }
         button{
             padding: 0 5px;
+            width: 160px;
             height: 43px;
+            font-size:10px;
+         
+    } 
+    @media screen and (max-width:300px){
+        img{
+            height: 25%;
+        }
+        button{
+            padding: 0 5px;
+            width: 150px;
+            height: 33px;
             font-size:10px;
          
     } 

@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import walls from '../../assets/walls.png'
-import walls_small from '../../assets/walls_small.png'
+import walls2 from '../../assets/wall2.png'
 import { Desc, ImgWrapper, Wrapper } from './heroStyled'
 
 
@@ -32,8 +31,7 @@ export const Hero = () => {
       </Desc>
 
       <ImgWrapper>
-        <img src={walls} alt='rule them all' className="big_img" />
-        <img src={walls_small} alt='rule them all' className="small_img" />
+        <img src={walls2} alt='rule them all' className="big_img" />
       </ImgWrapper>
     </Wrapper>
   )
