@@ -11,12 +11,17 @@ export const Wrapper = styled.div`
 
 
     button{
+        cursor: pointer;
         background: transparent;
+        border: 2px solid black;
+        font-weight: bold ;
         padding: 20px;
         box-sizing: border-box;
         border-radius: 170px;
     }
     button:hover{
+       
+        transition: all 0.3s ease-in-out;
         background: #000000;
         color: rgba(255, 222, 89, 1);
         
@@ -35,4 +40,13 @@ export const Wrapper = styled.div`
             height: 63px;
         }
     }
+
+
+    @media screen and (max-width:290px){
+        button{
+            padding: 0 5px;
+            height: 43px;
+            font-size:10px;
+         
+    } 
 `

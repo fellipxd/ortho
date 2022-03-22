@@ -6,8 +6,10 @@ export const Wrapper = styled.div`
     flex-direction:column;
     height: calc(100vh - 80px);
     position: relative;
-    
-   
+
+    @media screen and (max-width:290px){
+        margin-top: 20px;
+    }  
 `
 export const ImgWrapper = styled.div`
     height:33vh;
@@ -15,10 +17,6 @@ export const ImgWrapper = styled.div`
     margin:0 auto;
     position: absolute; 
     bottom: 0;
-    
-
-    
-    
 
     .big_img{
         height: 100%;
@@ -29,13 +27,16 @@ export const ImgWrapper = styled.div`
         display: none;
        
     }
+    @media screen and (height:600px){
+        height:30vh;
+    }
+   
     @media screen and (max-width:760px){
         position: absolute;
         bottom: 0;
         img{
         height: 100%;
-        width: 100%;
-       
+        width: 100%;  
     }
     .big_img{
         display: none;
@@ -58,6 +59,10 @@ export const ImgWrapper = styled.div`
        
     }
     } 
+
+    @media screen and (max-width:290px){
+        height:30vh;
+    }
 `
 
 export const Desc = styled.div`
@@ -74,6 +79,7 @@ export const Desc = styled.div`
         font-weight: 700;
         font-size: 6.2rem;
         max-width: 1135px;
+        transition: all 0.3s ease-in-out; 
         
     }
     .fade{
@@ -81,22 +87,27 @@ export const Desc = styled.div`
         font-size: 6.2rem;
         max-width: 1135px;
         color:  rgba(0, 0, 0, 0.5) !important;
+        transition: all 0.3s ease-in-out; 
     }
     .line{
         margin-left: 20px;
         color:  rgba(255, 222, 89, 1) !important;
-        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-width: 3px;
         -webkit-text-stroke-color: black;
         font-weight: 700;
-        pointerEvents: none;
+        height: 100px;
+        transition: all 0.3s ease-in-out; 
+        
         
     }
     .block{
+        height: 100px;
         margin-left: 20px;
         color:  black !important;
         opacity: 1;
         font-weight: 700;
-        pointerEvents: none;
+        transition: all 0.3s ease-in-out; 
+       
         
     }
 
@@ -109,6 +120,16 @@ export const Desc = styled.div`
     }
 
     button{
+        
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+line-height: 26px;
+letter-spacing: 0.07em;
+
+
+        cursor: pointer;
+        border: none;
         background: black;
         border-radius: 110px;
         display: flex;
@@ -121,6 +142,18 @@ export const Desc = styled.div`
         height: 56.52px;
         margin-top: 20px;
         color:rgba(255, 222, 89, 1);
+    }
+    @media screen and (height:600px){
+        .clear{
+        font-size: 5rem;
+        
+    }
+    .fade{
+        font-size: 5rem;
+    }
+    }
+    @media screen and (max-width:768px){
+        padding: 10px ;
     }
 
     @media screen and (max-width:760px){
@@ -145,6 +178,26 @@ export const Desc = styled.div`
     }
     button{
         max-width: 300px;
+    }
+    }
+
+
+    @media screen and (max-width:290px){
+        button{
+            height: 40px;
+            width: 200px;
+            font-size: 11px;
+        };
+        .goodby{
+        font-size: 16px;
+
+    }
+    .clear{
+        font-size: 2.5rem;
+        
+    }
+    .fade{
+        font-size: 2.5rem;
     }
     }
 
