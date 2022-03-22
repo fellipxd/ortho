@@ -2,6 +2,7 @@
   text-align: center;
   
   overflow-y: hidden;
+  overflow-x: hidden;
   background: rgba(255, 222, 89, 1);
 
 }

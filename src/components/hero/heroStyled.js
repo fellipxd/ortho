@@ -149,7 +149,7 @@ export const Desc = styled.div`
     }
     }
 
-    @media screen and (max-width:415px){
+    @media screen and (max-width:540px){
         padding: 5px ;
         .clear{
         font-size: 2.6rem;
@@ -203,6 +203,7 @@ export const Desc = styled.div`
         max-width: 300px;
     }
     }
+   
 
     @media screen and (max-width:290px){
         button{
